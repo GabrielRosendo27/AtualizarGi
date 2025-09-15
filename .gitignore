@@ -1,23 +1,24 @@
-cat > .gitignore <<EOF
-# Python
+# Ambientes virtuais
+.venv/
+env/
+venv/
+
+# Arquivos Python compilados
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
 
-# virtualenv
-.venv/
-venv/
-env/
-ENV/
-
-# editor/temp
-.vscode/
-.idea/
+# Logs
 *.log
 
-# build
-dist/
+# Build / distribuições
 build/
-*.egg-info/
-EOF
+dist/
+temp_extract/
+*.spec
+
+# Configs locais
+.DS_Store
+.idea/
+.vscode/
