@@ -1,24 +1,24 @@
-# Ambientes virtuais
+
 .venv/
 env/
 venv/
 
-# Arquivos Python compilados
+
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Logs
+
 *.log
 
-# Build / distribuições
+
 build/
 dist/
 temp_extract/
 *.spec
 
-# Configs locais
+
 .DS_Store
 .idea/
 .vscode/
