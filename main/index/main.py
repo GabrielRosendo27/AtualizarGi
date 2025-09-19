@@ -1,8 +1,7 @@
-
 import sys
-from updater import run_update
+from main.update.updater import run_update
 
-from admin_helper import is_admin, relaunch_as_admin
+from main.utils.is_admin import is_admin, relaunch_as_admin
 if not is_admin():
     print("Executando sem privilégios de administrador — tentando relançar com UAC...")
     if relaunch_as_admin():

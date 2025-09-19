@@ -5,7 +5,7 @@ import threading
 import queue
 import time
 
-from updater import run_update 
+from main.update.updater import run_update 
 
 
 AUTO_START = True             

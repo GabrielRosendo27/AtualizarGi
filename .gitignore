@@ -22,3 +22,4 @@ temp_extract/
 .DS_Store
 .idea/
 .vscode/
+.env
