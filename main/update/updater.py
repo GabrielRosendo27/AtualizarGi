@@ -1,29 +1,14 @@
-# updater.py
-import time
-from dataclasses import dataclass
 from typing import Callable, Optional
-
 from steps.close_process import step_one
 from steps.open_browser import step_two
 from steps.login import step_three
 from steps.link_download import step_four
 from steps.att_download import step_five
 from steps.file_switch import step_six
+from main.utils.types_1 import Context
 
 TOTAL_STEPS = 6
 
-@dataclass
-class Context:
-    cancel_event: Optional[object] = None
-    driver: Optional[object] = None
-    status_to_send: Optional[str] = None
-    detail_msg: str = ""
-
-@dataclass
-class StepResult:
-    ok: bool
-    status_to_send: Optional[str] = None
-    detail_msg: Optional[str] = None
 
 def run_update(progress_callback: Optional[Callable[[int, int, str], None]] = None, cancel_event=None):
     def step(n: int, msg: str):

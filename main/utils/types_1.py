@@ -1,4 +1,4 @@
-# updater.py (ou types.py)
+
 from dataclasses import dataclass
 from typing import Optional, Any
 
@@ -8,7 +8,7 @@ class Context:
     driver: Optional[Any] = None
     status_to_send: Optional[str] = None
     detail_msg: str = ""
-    # adicione mais campos compartilhados conforme necessário
+   
 
 
 @dataclass
@@ -16,4 +16,4 @@ class StepResult:
     ok: bool
     status_to_send: Optional[str] = None
     detail_msg: Optional[str] = None
-    # opcional: campo extra (e.g. driver) se necessário
+    
